@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef68efb447f33b844b95949f302bcba1, type: 3}
+  m_Name: Rori_Data
+  m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
+  syllables:
+  - ro
+  - ri
+  word: Rori
+  image: {fileID: 8324996120316966422, guid: 518abc6e3e2a1144482a555e5a3c399c, type: 3}

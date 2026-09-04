@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef68efb447f33b844b95949f302bcba1, type: 3}
+  m_Name: Velo_Data
+  m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
+  syllables:
+  - "v\xE9"
+  - lo
+  word: Velo
+  image: {fileID: -7272119819362497167, guid: 87ce8fa58a3642b45b754a4605e18a24, type: 3}
