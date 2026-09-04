@@ -9,6 +9,9 @@ public class MatchingGameManager : MonoBehaviour
     public IReadOnlyList<WordDataScriptable> GetExerciseWords() => exerciseWords;
     public IReadOnlyList<string> GetExerciseSyllables() => exerciseSyllables;
 
+    public bool HasSelectedWords() => exerciseWords.Count > 0; 
+    public bool HasSelectedSyllables() => exerciseSyllables.Count > 0;
+
     public void AddToExercise(WordDataScriptable wordDataScriptable)
     {
         exerciseWords.Add(wordDataScriptable);

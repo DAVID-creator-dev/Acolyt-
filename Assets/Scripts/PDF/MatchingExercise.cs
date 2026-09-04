@@ -17,15 +17,8 @@ public class MatchingExercise : MonoBehaviour
     public void GeneratePdf()
     {
         List<WordDataScriptable> words = matchingGameManager.GetExerciseWords().ToList();
-        List<string> syllables = matchingGameManager.GetExerciseSyllables().ToList(); 
-
-        if (words.Count == 0 && syllables.Count == 0)
-        {
-            Debug.Log("No words selected");
-            return;
-        }
-
-        syllables.Shuffle(); 
+        List<string> syllables = matchingGameManager.GetExerciseSyllables().Distinct().ToList(); 
+        syllables.Shuffle();
         words.Shuffle(); 
 
         Document.Create(container =>
