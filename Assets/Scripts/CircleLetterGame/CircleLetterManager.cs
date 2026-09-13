@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class CircleLetterManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private string lettersToCircle;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string GetExerciseLetters() => lettersToCircle;
+
+    public bool HasEnteredLetters() => !string.IsNullOrEmpty(lettersToCircle);
+
+    public void SetLetters(string letters) => lettersToCircle = letters;
 }
