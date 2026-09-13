@@ -4,7 +4,6 @@ using UnityEngine.UI;
 public class WordButton : MonoBehaviour
 {
     [HideInInspector] public WordDataScriptable wordDataScriptable;
-    [HideInInspector] public MatchingGameManager matchingGameManager;
 
     [SerializeField] private Color selectedColor = Color.gray;
 
@@ -23,9 +22,9 @@ public class WordButton : MonoBehaviour
     void ToggleExercise()
     {
         if (isAdded)
-            matchingGameManager.RemoveFromExercise(wordDataScriptable);
+            GameManager.Instance.RemoveFromExercise(wordDataScriptable);
         else
-            matchingGameManager.AddToExercise(wordDataScriptable);
+            GameManager.Instance.AddToExercise(wordDataScriptable);
 
         isAdded = !isAdded;
         buttonImage.color = isAdded ? selectedColor : normalColor;

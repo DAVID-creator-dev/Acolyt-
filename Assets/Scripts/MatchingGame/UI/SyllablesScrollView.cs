@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
 
 public class SyllablesScrollView : MonoBehaviour
 {
@@ -11,13 +10,10 @@ public class SyllablesScrollView : MonoBehaviour
 
     public void Populate()
     {
-        if(!matchingGameManager.HasSelectedWords())
-            return;
-
         foreach (Transform child in scrollView.content)
             Destroy(child.gameObject);
 
-        foreach (WordDataScriptable wordDataScriptable in matchingGameManager.GetExerciseWords())
+        foreach (WordDataScriptable wordDataScriptable in GameManager.Instance.GetExerciseWords())
             AddWordRow(wordDataScriptable);
     }
 

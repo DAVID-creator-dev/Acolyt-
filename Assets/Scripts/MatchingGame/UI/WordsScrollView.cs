@@ -1,16 +1,25 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic; 
+using System.Linq;
 using TMPro; 
 
 public class WordsScrollView : MonoBehaviour
 {
     [SerializeField] private ScrollRect scrollView;
     [SerializeField] private GameObject buttonPrefab;
-    [SerializeField] private MatchingGameManager matchingGameManager;
+    [HideInInspector] public List<WordDataScriptable> wordDataScriptables = new List<WordDataScriptable>();
 
     void Start()
     {
-        foreach(WordDataScriptable wordDataScriptable in GameManager.Instance.wordDataScriptables)
+        wordDataScriptables = Resources.LoadAll<WordDataScriptable>("ScriptableObjects").ToList();
+        if(wordDataScriptables.Count < 0)
+        {
+            Debug.Log("No wordDataScriptables found!"); 
+            return;
+        }
+
+        foreach(WordDataScriptable wordDataScriptable in wordDataScriptables)
             AddButton(wordDataScriptable);
     }
 
@@ -22,6 +31,5 @@ public class WordsScrollView : MonoBehaviour
 
         WordButton wordButton = newButtonObj.GetComponent<WordButton>();
         wordButton.wordDataScriptable = wordDataScriptable;
-        wordButton.matchingGameManager = matchingGameManager;
     }
 }

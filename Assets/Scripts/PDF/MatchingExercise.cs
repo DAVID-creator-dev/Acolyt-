@@ -16,7 +16,7 @@ public class MatchingExercise : MonoBehaviour
 
     public void GeneratePdf()
     {
-        List<WordDataScriptable> words = matchingGameManager.GetExerciseWords().ToList();
+        List<WordDataScriptable> words = GameManager.Instance.GetExerciseWords().ToList();
         List<string> syllables = matchingGameManager.GetExerciseSyllables().Distinct().ToList(); 
         syllables.Shuffle();
         words.Shuffle(); 

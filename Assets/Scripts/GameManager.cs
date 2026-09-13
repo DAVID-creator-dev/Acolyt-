@@ -1,12 +1,11 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    [HideInInspector] public List<WordDataScriptable> wordDataScriptables = new List<WordDataScriptable>(); 
+    private List<WordDataScriptable> exerciseWords = new List<WordDataScriptable>(); 
 
     void Awake()
     {
@@ -17,7 +16,13 @@ public class GameManager : MonoBehaviour
         }
 
         Instance = this;
-
-        wordDataScriptables = Resources.LoadAll<WordDataScriptable>("ScriptableObjects").ToList();
     }
+
+    public bool HasSelectedWords() => exerciseWords.Count > 0; 
+
+    public IReadOnlyList<WordDataScriptable> GetExerciseWords() => exerciseWords; 
+
+    public void AddToExercise(WordDataScriptable wordDataScriptable) => exerciseWords.Add(wordDataScriptable); 
+
+    public void RemoveFromExercise(WordDataScriptable wordDataScriptable) => exerciseWords.Remove(wordDataScriptable); 
 }
