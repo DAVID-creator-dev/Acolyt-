@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CircleLetterManager : MonoBehaviour
+public class CircleLettersManager : MonoBehaviour
 {
     private string lettersToCircle;
 

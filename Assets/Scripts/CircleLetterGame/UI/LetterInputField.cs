@@ -5,7 +5,7 @@ public class LetterInputField : MonoBehaviour
 {
     public TMP_InputField inputField;
 
-    [HideInInspector] public CircleLetterManager circleLetterManager;
+    [SerializeField] private CircleLettersManager circleLetterManager;
 
     void Start()
     {

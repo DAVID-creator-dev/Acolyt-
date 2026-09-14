@@ -15,8 +15,7 @@ public class ErrorMessage : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public static void Show(string message, float duration = 2f)
-        => instance.ShowInternal(message, duration);
+    public static void Show(string message, float duration = 2f) => instance.ShowInternal(message, duration);
 
     void ShowInternal(string message, float duration)
     {

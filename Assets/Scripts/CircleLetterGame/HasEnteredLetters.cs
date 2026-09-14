@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HasEnteredLetters : ConditionCheck
 {
-    [SerializeField] private CircleLetterManager circleLetterManager;
+    [SerializeField] private CircleLettersManager circleLetterManager;
 
     public override bool IsMet() => circleLetterManager.HasEnteredLetters();
 }

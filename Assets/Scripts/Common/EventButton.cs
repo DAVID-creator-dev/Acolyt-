@@ -1,12 +1,26 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
-public class GenerateButton : MonoBehaviour
+public class EventButton : MonoBehaviour
 {
+    private Button button; 
     [SerializeField] private ConditionCheck[] conditions;
     [SerializeField] private UnityEvent onGenerate;
     [SerializeField] private GameObject[] panelsToHide;
     [SerializeField] private GameObject[] panelsToShow;
+
+    void Start()
+    {
+        button = GetComponent<Button>();
+        if (!button)
+        {
+            Debug.Log("No button found"); 
+            return; 
+        }
+
+        button.onClick.AddListener(Generate); 
+    }
 
     public void Generate()
     {

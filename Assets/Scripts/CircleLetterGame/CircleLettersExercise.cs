@@ -8,9 +8,65 @@ using QuestPDF.Infrastructure;
 
 public class CircleLettersExercise : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private CircleLettersManager circleLettersManager;
+
     void Start()
     {
-        
+        QuestPDF.Settings.License = LicenseType.Community;
+    }
+
+    public void GeneratePdf()
+    {
+        List<WordDataScriptable> words = GameManager.Instance.GetExerciseWords().ToList();
+        string letters = circleLettersManager.GetExerciseLetters();
+        words.Shuffle();
+
+        Document.Create(container =>
+        {
+            container.Page(page =>
+            {
+                page.Size(PageSizes.A4);
+                page.Margin(30);
+                page.DefaultTextStyle(x => x.FontSize(16));
+
+                page.Content().Column(column =>
+                {
+                    column.Item().Border(1).Padding(5).AlignCenter().Text("ENTOURE LES LETTRES").FontSize(14).Bold();
+                    column.Item().PaddingBottom(15);
+
+                    column.Item().Row(entry =>
+                    {
+                        entry.ConstantItem(20).Text("●");
+                        entry.AutoItem().Text($"Entoure les lettres ({string.Join(",", letters)}).");
+                    });
+
+                    column.Item().PaddingBottom(20);
+
+                    const int maxWordsPerColumn = 6;
+                    bool splitColumns = words.Count > maxWordsPerColumn;
+                    int splitIndex = splitColumns ? (words.Count + 1) / 2 : words.Count;
+
+                    List<WordDataScriptable> leftWords = words.Take(splitIndex).ToList();
+                    List<WordDataScriptable> rightWords = words.Skip(splitIndex).ToList();
+
+                    column.Item().Row(row =>
+                    {
+                        row.RelativeItem().Column(leftColumn =>
+                        {
+                            foreach (WordDataScriptable word in leftWords)
+                                leftColumn.Item().PaddingVertical(10).Text(word.word).FontSize(28);
+                        });
+
+                        if (splitColumns)
+                            row.RelativeItem().Column(rightColumn =>
+                            {
+                                foreach (WordDataScriptable word in rightWords)
+                                    rightColumn.Item().PaddingVertical(10).Text(word.word).FontSize(28);
+                            });
+                    });
+                });
+            });
+        })
+        .GeneratePdf(Path.Combine(Application.persistentDataPath, "circle_letters_exercise.pdf"));
     }
 }
