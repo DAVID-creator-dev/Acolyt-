@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class Line : MonoBehaviour
 {
     private bool _mouseButtonDown;
     [SerializeField] private Image hudImage;

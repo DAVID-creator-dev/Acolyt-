@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class SyllableButton : MonoBehaviour
 {
     [HideInInspector] public string syllable;
-    [HideInInspector] public MatchingGameManager matchingGameManager;
+    [HideInInspector] public SyllableSelector syllableSelector;
     
 
     [SerializeField] private Color selectedColor = Color.gray;
@@ -24,9 +24,9 @@ public class SyllableButton : MonoBehaviour
     void ToggleExercise()
     {
         if (isAdded)
-            matchingGameManager.RemoveSyllable(syllable);
+            syllableSelector.RemoveSyllable(syllable);
         else
-            matchingGameManager.AddSyllable(syllable);
+            syllableSelector.AddSyllable(syllable);
 
         isAdded = !isAdded;
         buttonImage.color = isAdded ? selectedColor : normalColor;

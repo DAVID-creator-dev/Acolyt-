@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class SyllablesScrollView : MonoBehaviour
 {
     [SerializeField] private ScrollRect scrollView;
     [SerializeField] private GameObject buttonPrefab;
-    [SerializeField] private MatchingGameManager matchingGameManager;
+    //[SerializeField] private MatchingGameManager matchingGameManager;
+
+    [SerializeField] private SyllableSelector syllableSelector; 
 
     public void Populate()
     {
@@ -43,7 +46,7 @@ public class SyllablesScrollView : MonoBehaviour
 
         SyllableButton syllableButton = newButtonObj.GetComponent<SyllableButton>();
         syllableButton.syllable = syllable;
-        syllableButton.matchingGameManager = matchingGameManager;
+        syllableButton.syllableSelector = syllableSelector;
     }
 
     void AddImage(Transform parent, Sprite sprite)
