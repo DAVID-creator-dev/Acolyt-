@@ -16,5 +16,5 @@ MonoBehaviour:
   - mous
   - ti
   - que
-  word: Moustique
-  image: {fileID: 3716009102328160905, guid: cb9634aa3910d874698d7c281a8337ed, type: 3}
+  word: moustique
+  image: {fileID: -6026195423518952280, guid: 899adb3f06de97040be3c16b5e21a60e, type: 3}

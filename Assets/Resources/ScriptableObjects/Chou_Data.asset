@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - chou
-  word: Chou
-  image: {fileID: 3624953155561657096, guid: 5ef438224d1714143814c1795555a532, type: 3}
+  word: chou
+  image: {fileID: -7720616188174725773, guid: 9e38c9b3bf6fd5e4b9cf2ea10ddef291, type: 3}

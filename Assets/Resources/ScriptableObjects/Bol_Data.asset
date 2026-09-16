@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - bol
-  word: Bol
-  image: {fileID: -7328200632876128521, guid: 0ab48a0865d2c2e41bff5a19ccc3afd5, type: 3}
+  word: bol
+  image: {fileID: 2574973695660033006, guid: d0744e26ac908a54db39a9558a6d1d5b, type: 3}

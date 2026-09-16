@@ -15,5 +15,5 @@ MonoBehaviour:
   syllables:
   - po
   - mme
-  word: 'Pomme '
-  image: {fileID: 5469014407300677459, guid: 5195745ee6e481b42947a9fc55a242b9, type: 3}
+  word: 'pomme '
+  image: {fileID: -6774720959719900375, guid: 85f5b82f9c1e4724ca0f459c41120dfc, type: 3}

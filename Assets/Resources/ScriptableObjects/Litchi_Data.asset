@@ -15,5 +15,5 @@ MonoBehaviour:
   syllables:
   - li
   - tchi
-  word: Litchi
+  word: litchi*
   image: {fileID: 7221164682514925693, guid: 415fe90e6d72ef44c93d6c9f3f0ed3b0, type: 3}

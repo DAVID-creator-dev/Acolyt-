@@ -15,5 +15,5 @@ MonoBehaviour:
   syllables:
   - tu
   - ba
-  word: Tuba
-  image: {fileID: -6979721305363786973, guid: 44980df13acc8ee47bae15256f263578, type: 3}
+  word: tuba
+  image: {fileID: 5208663818824879563, guid: 7bef066410729084baefd22f8547a20c, type: 3}

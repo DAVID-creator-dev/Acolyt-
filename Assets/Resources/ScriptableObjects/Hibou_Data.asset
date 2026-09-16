@@ -15,5 +15,5 @@ MonoBehaviour:
   syllables:
   - hi
   - bou
-  word: Hibou
-  image: {fileID: 3215058121047677784, guid: d548f2c2de4e33f43972f845e56377ec, type: 3}
+  word: hibou
+  image: {fileID: 5747908587532450855, guid: e1fb20afa55d78d49ac28aa20565aa51, type: 3}

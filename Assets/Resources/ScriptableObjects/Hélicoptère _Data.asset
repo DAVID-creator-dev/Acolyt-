@@ -18,5 +18,5 @@ MonoBehaviour:
   - cop
   - "t\xE8"
   - re
-  word: "H\xE9licopt\xE8re "
-  image: {fileID: -6839777942434288203, guid: e1468a0335133a846ade283cc53d485e, type: 3}
+  word: "h\xE9licopt\xE8re "
+  image: {fileID: 3875848929095342678, guid: bff8b43d0599d3f48b533a5f88f025c7, type: 3}

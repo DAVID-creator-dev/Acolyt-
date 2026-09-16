@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - o
-  - reil
-  - le
-  word: Oreille
-  image: {fileID: -547198879096279667, guid: 5b2d04ee3be631242ada03f38ee9c647, type: 3}
+  - rei
+  - lle
+  word: oreille
+  image: {fileID: 3553802220165489062, guid: 266588dc42a841a4a86f3d8ca22e886c, type: 3}

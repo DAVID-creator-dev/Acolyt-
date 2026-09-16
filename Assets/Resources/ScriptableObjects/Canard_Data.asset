@@ -15,5 +15,5 @@ MonoBehaviour:
   syllables:
   - ca
   - nard
-  word: 'Canard '
-  image: {fileID: -3760205778224058989, guid: baf2facea01499f4482b95b335294f51, type: 3}
+  word: canard*
+  image: {fileID: 0}

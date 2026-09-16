@@ -16,5 +16,5 @@ MonoBehaviour:
   - ca
   - ro
   - tte
-  word: Carotte
-  image: {fileID: -5374917528832888157, guid: b73a105ff16d596458a538e83816d55b, type: 3}
+  word: carotte
+  image: {fileID: -1823783541171247413, guid: 6b647a41bf9c1df4ebd5e8a3387bce33, type: 3}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - ra
-  word: Rat
-  image: {fileID: -3243589764329065622, guid: 194c17672e6511748a0169475f00ee1f, type: 3}
+  word: rat
+  image: {fileID: 4443398910523724276, guid: 2a7685e9ef8bc994a9251040ff71867f, type: 3}

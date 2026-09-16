@@ -17,7 +17,7 @@ public class MatchingExercise : MonoBehaviour
     public void GeneratePdf()
     {
         List<WordDataScriptable> words = GameManager.Instance.GetExerciseWords().ToList();
-        List<string> syllables = matchingGameManager.GetExerciseSyllables().Distinct().ToList(); 
+        List<string> syllables = matchingGameManager.GetExerciseSyllables().ToList(); 
         syllables.Shuffle();
         words.Shuffle(); 
 
@@ -25,26 +25,22 @@ public class MatchingExercise : MonoBehaviour
         {
             container.Page(page =>
             {
-                page.Size(PageSizes.A4);
-                page.Margin(30);
-                page.DefaultTextStyle(x => x.FontSize(16));
-
                 page.Content().Column(column =>
                 {
-                    column.Item().Border(1).Padding(5).AlignCenter().Text("SYLLABES - MOTS").FontSize(14).Bold();
-                    column.Item().PaddingBottom(15);
+                    page.Size(PageSizes.A4);
+                    page.Margin(30);
+                    page.DefaultTextStyle(x => x.FontSize(16));
 
-                    column.Item().Row(entry =>
+                    column.Item().Row(row =>
                     {
-                        entry.ConstantItem(20).Text("●");
-                        entry.AutoItem().Text("Lis les syllabes.");
+                        row.RelativeItem().AlignLeft().Text("Prénom : .................");
+                        row.RelativeItem().AlignRight().Text("Date : .................");
                     });
 
-                    column.Item().Row(entry =>
-                    {
-                        entry.ConstantItem(20).Text("●");
-                        entry.AutoItem().Text("Relie chaque syllabe à son image.");
-                    }); 
+                    column.Item().PaddingBottom(20);
+
+                    column.Item().Border(1).Padding(5).AlignCenter().Text("Lire des syllabes").FontSize(14).Bold();
+                    column.Item().PaddingBottom(15);
                     
                     column.Item().PaddingBottom(20);
 
@@ -79,6 +75,6 @@ public class MatchingExercise : MonoBehaviour
                 });
             });
         })
-        .GeneratePdf(Path.Combine(Application.persistentDataPath, "matching_exercise.pdf"));
+        .GeneratePdf(Path.Combine(Helpers.GetDownloadsPath(), "matching_exercise.pdf"));
     }
 }

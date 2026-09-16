@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - bus
-  word: Bus
-  image: {fileID: -2585407237663792261, guid: 4f4ec4effe325ee44bf042a3acdcdba5, type: 3}
+  word: bus
+  image: {fileID: -9030330416385340031, guid: a013ff8b88674f84cbac00ba084ffcb1, type: 3}

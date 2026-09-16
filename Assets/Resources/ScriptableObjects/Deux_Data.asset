@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - deux
-  word: Deux
+  word: deux*
   image: {fileID: -765952549339868539, guid: 60ba6fba4b273c5499e235bbf8fc6f94, type: 3}

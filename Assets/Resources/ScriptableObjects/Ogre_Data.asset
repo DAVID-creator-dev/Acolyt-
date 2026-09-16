@@ -15,5 +15,5 @@ MonoBehaviour:
   syllables:
   - o
   - gre
-  word: Ogre
-  image: {fileID: 1654314943820117109, guid: 7a6ce2ce3e3fa7f48a39daa77a36cf83, type: 3}
+  word: ogre
+  image: {fileID: -2586487183492322376, guid: f93bb30ea86ee824e8c11fbfa0f7c7ac, type: 3}

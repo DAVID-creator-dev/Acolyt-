@@ -1,9 +1,21 @@
+using System;
 using System.Collections.Generic;
-using UnityEngine; 
+using System.IO;
+using UnityEngine;
 
 public static class Helpers
 {
     private static readonly System.Random rng = new System.Random();
+
+    public static string GetDownloadsPath()
+    {
+        string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads");
+
+        if (!Directory.Exists(path))
+            Directory.CreateDirectory(path);
+
+        return path;
+    }
 
     public static void Shuffle<T>(this IList<T> list)
     {

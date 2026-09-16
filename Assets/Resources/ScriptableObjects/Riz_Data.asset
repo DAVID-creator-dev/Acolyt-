@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - ri
-  word: Riz
-  image: {fileID: -9218985654079681339, guid: b83749b773fe4454aa7f64f6e4cee7c5, type: 3}
+  word: riz
+  image: {fileID: -5773036669620908992, guid: 5c948553008fb9447b83127322fee801, type: 3}

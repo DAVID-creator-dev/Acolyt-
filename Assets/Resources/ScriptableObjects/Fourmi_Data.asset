@@ -15,5 +15,5 @@ MonoBehaviour:
   syllables:
   - four
   - mi
-  word: Fourmi
-  image: {fileID: 7770909485019218802, guid: 2388d0d53dd43634aa37d09ee9ef341d, type: 3}
+  word: fourmi
+  image: {fileID: 7430883312366850061, guid: 84d56f62d2671a247973872cf94a13a8, type: 3}

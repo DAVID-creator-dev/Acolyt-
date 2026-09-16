@@ -16,5 +16,5 @@ MonoBehaviour:
   - voi
   - tu
   - re
-  word: Voiture
-  image: {fileID: -8536993055357836063, guid: 3922a78bad1c8fe499120668f7a86693, type: 3}
+  word: voiture
+  image: {fileID: -4844504457043177607, guid: 19fbadcdcf6d8f743ac4a9ad68804f3a, type: 3}

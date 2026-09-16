@@ -31,14 +31,16 @@ public class CircleLettersExercise : MonoBehaviour
 
                 page.Content().Column(column =>
                 {
-                    column.Item().Border(1).Padding(5).AlignCenter().Text("ENTOURE LES LETTRES").FontSize(14).Bold();
-                    column.Item().PaddingBottom(15);
-
-                    column.Item().Row(entry =>
+                    column.Item().Row(row =>
                     {
-                        entry.ConstantItem(20).Text("●");
-                        entry.AutoItem().Text($"Entoure les lettres ({string.Join(",", letters)}).");
+                        row.RelativeItem().AlignLeft().Text("Prénom : .................");
+                        row.RelativeItem().AlignRight().Text("Date : .................");
                     });
+
+                    column.Item().PaddingBottom(20);
+
+                    column.Item().Border(1).Padding(5).AlignCenter().Text($"Entoure les lettres ({string.Join(",", letters.ToCharArray())}).").FontSize(14).Bold();
+                    column.Item().PaddingBottom(15);
 
                     column.Item().PaddingBottom(20);
 
@@ -67,6 +69,6 @@ public class CircleLettersExercise : MonoBehaviour
                 });
             });
         })
-        .GeneratePdf(Path.Combine(Application.persistentDataPath, "circle_letters_exercise.pdf"));
+        .GeneratePdf(Path.Combine(Helpers.GetDownloadsPath(), "circle_letters_exercise.pdf"));
     }
 }

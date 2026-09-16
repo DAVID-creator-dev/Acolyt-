@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - a
-  - beil
-  - le
-  word: Abeille
-  image: {fileID: -5258876479202309878, guid: 1500f0afbf6a2cb49a6d02a4c5d5fd6f, type: 3}
+  - bei
+  - lle
+  word: abeille
+  image: {fileID: 6913412771873605324, guid: 17201d2a60dfd2346a04f8afc6ed7e83, type: 3}

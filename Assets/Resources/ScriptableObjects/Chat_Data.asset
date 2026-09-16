@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - cha
-  word: Chat
-  image: {fileID: 513170163243712003, guid: a44256acb4092494b9beb06a2a93cc7d, type: 3}
+  word: chat
+  image: {fileID: 7612422530436943173, guid: 5b2af1e94775c9c44a8135feca57b784, type: 3}

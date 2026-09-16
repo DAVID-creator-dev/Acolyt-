@@ -16,5 +16,5 @@ MonoBehaviour:
   - pi
   - ro
   - gue
-  word: Pirogue
-  image: {fileID: -7842472475774104886, guid: fbb10f8b057cb0748847fcbeb4c49c0d, type: 3}
+  word: pirogue
+  image: {fileID: -4167087808955960179, guid: f9997ee28001a064db7a61acec0979dd, type: 3}

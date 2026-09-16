@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - coq
-  word: Coq
-  image: {fileID: -426292481965262181, guid: 373855e85058a77439efe45f82bb1478, type: 3}
+  word: coq
+  image: {fileID: -3176846421969688673, guid: 4a093021e46b2f74f85a5a9aad315ff1, type: 3}
