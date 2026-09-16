@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Botte_Data
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
-  - bot
-  - te
+  - bo
+  - tte
   word: botte
   image: {fileID: 7426870833121086533, guid: 28de8d707f647724286207d8453afe56, type: 3}

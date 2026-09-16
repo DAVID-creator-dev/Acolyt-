@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 2a7685e9ef8bc994a9251040ff71867f
+guid: 078eff980b94af04b82eb6f6a42a2798
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4443398910523724276
-    second: 1M. Rat_0
-  - first:
-      213: -1927022486719451929
-    second: 1M. Rat_1
+      213: 8014229206470083605
+    second: Syllabe_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1M. Rat_0
+      name: Syllabe_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1000
-        height: 1000
+        width: 235
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f1df1954cf1aad30800000000000000
-      internalID: 4443398910523724276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1M. Rat_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7eca5e41247d145e0800000000000000
-      internalID: -1927022486719451929
+      spriteID: 514c5388003483f60800000000000000
+      internalID: 8014229206470083605
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 34722e4947744ed4280265330360195f
+    spriteID: b5ce0cce20d43f24eaa83345aed715b8
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1M. Rat_0: 4443398910523724276
-      1M. Rat_1: -1927022486719451929
+      Syllabe_0: 8014229206470083605
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - go
-  - ya
+  - y
+  - a
   - ve
   word: goyave
   image: {fileID: 1797925760561092244, guid: 6b85af7719abcc44f9688d6adc275c71, type: 3}

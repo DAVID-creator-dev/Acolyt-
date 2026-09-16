@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - bre
-  - bis
+  - bi
   word: brebis
   image: {fileID: -8474670005587319120, guid: 1bb69029956672744ab3302438013ef8, type: 3}

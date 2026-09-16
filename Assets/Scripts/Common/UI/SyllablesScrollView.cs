@@ -7,12 +7,12 @@ public class SyllablesScrollView : MonoBehaviour
 {
     [SerializeField] private ScrollRect scrollView;
     [SerializeField] private GameObject buttonPrefab;
-    //[SerializeField] private MatchingGameManager matchingGameManager;
-
     [SerializeField] private SyllableSelector syllableSelector; 
 
     public void Populate()
     {
+        syllableSelector.ClearSyllables(); 
+
         foreach (Transform child in scrollView.content)
             Destroy(child.gameObject);
 

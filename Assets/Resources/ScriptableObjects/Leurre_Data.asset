@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Leurre_Data
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
-  - leur
-  - re
+  - leu
+  - rre
   word: leurre
   image: {fileID: -2638406811416398356, guid: ea26f623442712347bb1fd4b17abd280, type: 3}

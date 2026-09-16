@@ -39,7 +39,7 @@ public class CircleLettersExercise : MonoBehaviour
 
                     column.Item().PaddingBottom(20);
 
-                    column.Item().Border(1).Padding(5).AlignCenter().Text($"Entoure les lettres ({string.Join(",", letters.ToCharArray())}).").FontSize(14).Bold();
+                    column.Item().Border(1).Padding(5).AlignCenter().Text($"Entoure les lettres ({string.Join(",", letters.ToCharArray())}).").FontSize(14);
                     column.Item().PaddingBottom(15);
 
                     column.Item().PaddingBottom(20);

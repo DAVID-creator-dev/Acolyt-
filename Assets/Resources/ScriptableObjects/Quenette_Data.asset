@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - que
-  - net
-  - te
+  - ne
+  - tte
   word: quenette
   image: {fileID: -5109938912343146320, guid: e7e7861f31d40ee4eab806b99cc8ad29, type: 3}

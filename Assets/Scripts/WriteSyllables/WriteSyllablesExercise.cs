@@ -5,9 +5,14 @@ using UnityEngine;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
+using UnityEngine.UIElements;
 
 public class WriteSyllablesExercise : MonoBehaviour
 {
+    [SerializeField] private WriteSyllablesManager writeSyllablesManager; 
+    [SerializeField] private Sprite syllable; 
+    [SerializeField] private Sprite syllableCross; 
+
     void Start()
     {
         QuestPDF.Settings.License = LicenseType.Community;
@@ -16,6 +21,7 @@ public class WriteSyllablesExercise : MonoBehaviour
     public void GeneratePdf()
     {
         List<WordDataScriptable> words = GameManager.Instance.GetExerciseWords().ToList();
+        List<string> syllables = writeSyllablesManager.GetExerciseSyllables().ToList(); 
         words.Shuffle(); 
 
         Document.Create(container =>
@@ -28,65 +34,66 @@ public class WriteSyllablesExercise : MonoBehaviour
 
                 page.Content().Column(column =>
                 {
-                    column.Item().Border(1).Padding(5).AlignCenter().Text("SYLLABES - MOTS").FontSize(14).Bold();
-                    column.Item().PaddingBottom(15);
-
-                    column.Item().Row(entry =>
+                    column.Item().Row(row =>
                     {
-                        entry.ConstantItem(20).Text("●");
-                        entry.AutoItem().Text("Lis les syllabes.");
+                        row.RelativeItem().AlignLeft().Text("Prénom : .................");
+                        row.RelativeItem().AlignRight().Text("Date : .................");
                     });
 
-                    column.Item().Row(entry =>
-                    {
-                        entry.ConstantItem(20).Text("●");
-                        entry.AutoItem().Text("Relie chaque syllabe à son image.");
-                    }); 
                     column.Item().PaddingBottom(20);
 
+                    column.Item().Border(1).Padding(5).AlignCenter().Text("Écrire des syllabes").FontSize(14);
+                    column.Item().PaddingBottom(15);
                     
                     column.Item().Table(table =>
                     {
                         table.ColumnsDefinition(columns =>
                         {
-                            columns.ConstantColumn(120); 
-                            columns.RelativeColumn();    
+                            columns.ConstantColumn(100);
+                            columns.RelativeColumn();
                         });
 
                         foreach (WordDataScriptable word in words)
                         {
                             table.Cell().Border(1).Column(inner =>
                             {
-                                inner.Item().BorderBottom(1).Padding(5).AlignCenter().Height(70).Image(Helpers.SpriteToPng(word.image)).FitArea();
-                                inner.Item().Padding(5).AlignCenter().Text("X X"); // nombre de syllabes, à rendre dynamique plus tard
+                                inner.Item().BorderBottom(1).Padding(5).Height(100).AlignCenter().AlignMiddle().Image(Helpers.SpriteToPng(word.image)).FitArea();
+                                
+                                inner.Item().AlignCenter().Row(row =>
+                                {
+                                    foreach(string currentSyllable in word.syllables)
+                                    {
+                                        if (syllables.Contains(currentSyllable))
+                                            row.AutoItem().Width(20).Height(30).PaddingBottom(5).AlignBottom().Image(Helpers.SpriteToPng(syllableCross)).FitArea();
+                                        else
+                                            row.AutoItem().Width(20).Height(30).PaddingBottom(5).AlignBottom().Image(Helpers.SpriteToPng(syllable)).FitArea();
+                                    }
+                                });
                             });
 
-                            table.Cell().Border(1); // rien dedans, juste le cadre pour écrire
+                            table.Cell().Border(1); 
                         }
                     }); 
 
-                    /*
-                    // TODO: remplacer par la liste fournie par WriteSyllablesManager une fois définie
-                    List<string> syllables = new List<string> { "re", "ri", "ro", "ru" };
-
-                    column.Item().Table(table =>
+                    column.Item().Extend().AlignBottom().Table(table =>
                     {
+                        const int totalColumns = 4;
+
                         table.ColumnsDefinition(columns =>
                         {
-                            foreach (string syllable in syllables)
+                            for (int i = 0; i < totalColumns; i++)
                                 columns.RelativeColumn();
                         });
 
-                        foreach (string syllable in syllables)
-                            table.Cell().Border(1).Padding(5).AlignCenter().Text(syllable).FontSize(20);
+                        for (int i = 0; i < totalColumns; i++)
+                            table.Cell().Border(1).Padding(5).Height(30).AlignCenter().Text(i < syllables.Count ? syllables[i] : "").FontSize(20);
 
-                        foreach (string syllable in syllables)
-                            table.Cell().Border(1).Padding(5).Height(60);
+                        for (int i = 0; i < totalColumns; i++)
+                            table.Cell().Border(1).Padding(5).Height(30);
                     });
-                    */
                 });
             });
         })
-        .GeneratePdf(Path.Combine(Application.persistentDataPath, "test.pdf"));
+        .GeneratePdf(Path.Combine(Helpers.GetDownloadsPath(), "test.pdf"));
     }
 }

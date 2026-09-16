@@ -39,7 +39,7 @@ public class MatchingExercise : MonoBehaviour
 
                     column.Item().PaddingBottom(20);
 
-                    column.Item().Border(1).Padding(5).AlignCenter().Text("Lire des syllabes").FontSize(14).Bold();
+                    column.Item().Border(1).Padding(5).AlignCenter().Text("Lire des syllabes").FontSize(14);
                     column.Item().PaddingBottom(15);
                     
                     column.Item().PaddingBottom(20);
@@ -67,7 +67,7 @@ public class MatchingExercise : MonoBehaviour
 
                                     entry.ConstantItem(90).Column(item =>
                                     {
-                                        item.Item().AlignCenter().Width(70).Height(70).Image(Helpers.SpriteToPng(word.image)).FitArea();
+                                        item.Item().AlignCenter().AlignMiddle().Width(70).Height(70).Image(Helpers.SpriteToPng(word.image)).FitArea();
                                     });
                                 });
                         });

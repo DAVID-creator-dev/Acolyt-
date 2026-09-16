@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
   - tor
-  - tue
+  - tu
   word: tortue
   image: {fileID: 6924686232672370411, guid: bde7d51e127084d448d9746a30fb6cb3, type: 3}

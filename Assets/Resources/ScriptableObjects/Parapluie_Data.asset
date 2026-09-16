@@ -17,5 +17,5 @@ MonoBehaviour:
   - ra
   - plu
   - ie
-  word: Parapluie
+  word: parapluie
   image: {fileID: 6795517400188883018, guid: 7af296670c5dd4441aa61a65929f868b, type: 3}

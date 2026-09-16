@@ -7,13 +7,7 @@ public class MatchingGameManager : SyllableSelector
 
     public bool HasSelectedSyllables() => exerciseSyllables.Count > 0;
 
-    public override void AddSyllable(string syllable)
-    {
-        exerciseSyllables.Add(syllable);
-    }
-
-    public override void RemoveSyllable(string syllable)
-    {
-        exerciseSyllables.Remove(syllable);
-    }
+    public override void AddSyllable(string syllable) => exerciseSyllables.Add(syllable);
+    public override void RemoveSyllable(string syllable) => exerciseSyllables.Remove(syllable);
+    public override void ClearSyllables() => exerciseSyllables.Clear(); 
 }

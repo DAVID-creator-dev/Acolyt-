@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 2a7685e9ef8bc994a9251040ff71867f
+guid: a63049b98c8cd804fbcfd5f50c1148bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4443398910523724276
-    second: 1M. Rat_0
+      213: 4751912704803649446
+    second: SyllabeCroix_0
   - first:
-      213: -1927022486719451929
-    second: 1M. Rat_1
+      213: -5568313560776606741
+    second: SyllabeCroix_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1M. Rat_0
+      name: SyllabeCroix_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1000
-        height: 1000
+        width: 235
+        height: 190
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4f1df1954cf1aad30800000000000000
-      internalID: 4443398910523724276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1M. Rat_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7eca5e41247d145e0800000000000000
-      internalID: -1927022486719451929
+      spriteID: 6a7bc75ad6f22f140800000000000000
+      internalID: 4751912704803649446
       vertices: []
       indices: 
       edges: []
@@ -150,7 +128,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 34722e4947744ed4280265330360195f
+    spriteID: 0342f46b27b3c4245a37b5c0d437843e
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +138,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1M. Rat_0: 4443398910523724276
-      1M. Rat_1: -1927022486719451929
+      SyllabeCroix_0: 4751912704803649446
+      SyllabeCroix_1: -5568313560776606741
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
