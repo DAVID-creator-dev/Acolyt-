@@ -94,6 +94,6 @@ public class WriteSyllablesExercise : MonoBehaviour
                 });
             });
         })
-        .GeneratePdf(Path.Combine(Helpers.GetDownloadsPath(), "test.pdf"));
+        .GeneratePdf(Path.Combine(Helpers.GetDownloadsPath(), "write_syllables_exercise.pdf"));
     }
 }
