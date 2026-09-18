@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,6 +7,7 @@ using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
 using UnityEngine.UIElements;
+using UnityEngine.U2D;
 
 public class WriteSyllablesExercise : MonoBehaviour
 {
@@ -85,11 +87,8 @@ public class WriteSyllablesExercise : MonoBehaviour
                                 columns.RelativeColumn();
                         });
 
-                        for (int i = 0; i < totalColumns; i++)
-                            table.Cell().Border(1).Padding(5).Height(30).AlignCenter().Text(i < syllables.Count ? syllables[i] : "").FontSize(20);
-
-                        for (int i = 0; i < totalColumns; i++)
-                            table.Cell().Border(1).Padding(5).Height(30);
+                        for (int i = 0; i < syllables.Count; i++)
+                            table.Cell().Border(1).Padding(5).Height(30).AlignCenter().Text(syllables[i]).FontSize(20);
                     });
                 });
             });
