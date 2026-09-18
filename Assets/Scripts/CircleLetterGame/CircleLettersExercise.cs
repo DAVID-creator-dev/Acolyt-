@@ -56,14 +56,14 @@ public class CircleLettersExercise : MonoBehaviour
                         row.RelativeItem().Column(leftColumn =>
                         {
                             foreach (WordDataScriptable word in leftWords)
-                                leftColumn.Item().PaddingVertical(10).Text(word.word).FontSize(28);
+                                leftColumn.Item().PaddingVertical(10).Text(word.word.ToLower()).FontSize(28);
                         });
 
                         if (splitColumns)
                             row.RelativeItem().Column(rightColumn =>
                             {
                                 foreach (WordDataScriptable word in rightWords)
-                                    rightColumn.Item().PaddingVertical(10).Text(word.word).FontSize(28);
+                                    rightColumn.Item().PaddingVertical(10).Text(word.word.ToLower()).FontSize(28);
                             });
                     });
                 });

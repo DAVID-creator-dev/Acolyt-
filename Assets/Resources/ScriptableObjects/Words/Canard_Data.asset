@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef68efb447f33b844b95949f302bcba1, type: 3}
-  m_Name: Petit_Data
+  m_Name: Canard_Data
   m_EditorClassIdentifier: Assembly-CSharp::WordDataScriptable
   syllables:
-  - pe
-  - tit
-  word: petit
-  image: {fileID: 2437080204040423556, guid: 5eea0895b5209f549bbe6a1d288168e9, type: 3}
+  - ca
+  - nar
+  word: canard*
+  image: {fileID: -3760205778224058989, guid: 9a2e777548fdfc64ab6b1f4e53bfc388, type: 3}

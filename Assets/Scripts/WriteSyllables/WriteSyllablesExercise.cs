@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,8 +5,6 @@ using UnityEngine;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
-using UnityEngine.UIElements;
-using UnityEngine.U2D;
 
 public class WriteSyllablesExercise : MonoBehaviour
 {

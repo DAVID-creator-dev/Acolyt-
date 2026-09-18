@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5549bf1ec64a9043921e69d8aac0681, type: 3}
+  m_Name: Lesson_Data
+  m_EditorClassIdentifier: Assembly-CSharp::LessonScriptable
+  sentences:
+  - sentence: "Il y a L\xE9o"
+    words:
+    - syllables:
+      - il
+    - syllables:
+      - y
+    - syllables:
+      - a
+    - syllables:
+      - "l\xE9"
+      - o
+  - sentence: Il y a Lili
+    words:
+    - syllables:
+      - il
+    - syllables:
+      - y
+    - syllables:
+      - a
+    - syllables:
+      - "l\xE9"
+      - o
+  - sentence: Lola a lu
+    words:
+    - syllables:
+      - lo
+      - la
+    - syllables:
+      - a
+    - syllables:
+      - lu
+  - sentence: Ali a lu
+    words:
+    - syllables:
+      - a
+      - li
+    - syllables:
+      - a
+    - syllables:
+      - lu
+  - sentence: Il y a Rori
+    words:
+    - syllables:
+      - il
+    - syllables:
+      - y
+    - syllables:
+      - a
+    - syllables:
+      - ro
+      - ri
+  - sentence: Il y a le lori
+    words:
+    - syllables:
+      - il
+    - syllables:
+      - y
+    - syllables:
+      - a
+    - syllables:
+      - le
+    - syllables:
+      - lo
+      - ri
+  - sentence: Lulu a lu
+    words:
+    - syllables:
+      - lu
+      - lu
+    - syllables:
+      - a
+    - syllables:
+      - lu
+  - sentence: "L\xE9a a relu "
+    words:
+    - syllables:
+      - "l\xE9"
+      - a
+    - syllables:
+      - a
+    - syllables:
+      - re
+      - lu
+  - sentence: Rio a ri
+    words:
+    - syllables:
+      - ri
+      - o
+    - syllables:
+      - a
+    - syllables:
+      - ri
+  - sentence: Il y a Fara
+    words:
+    - syllables:
+      - il
+    - syllables:
+      - y
+    - syllables:
+      - a
+    - syllables:
+      - Fa
+      - ra
+  - sentence: "Fara a fil\xE9 "
+    words:
+    - syllables:
+      - fa
+      - ra
+    - syllables:
+      - a
+    - syllables:
+      - fi
+      - "l\xE9"
+  - sentence: Il y a Fifi
+    words:
+    - syllables:
+      - il
+    - syllables:
+      - y
+    - syllables:
+      - a
+    - syllables:
+      - fi
+      - fi
+  - sentence: 'Fifi file '
+    words:
+    - syllables:
+      - fi
+      - fi
+    - syllables:
+      - fi
+      - le
+  - sentence: 'Il filera '
+    words:
+    - syllables:
+      - il
+    - syllables:
+      - fi
+      - le
+      - ra
+  - sentence: Il y a Jojo
+    words:
+    - syllables:
+      - il
+    - syllables:
+      - y
+    - syllables:
+      - a
+    - syllables:
+      - jo
+      - jo
+  - sentence: "Jojo a jur\xE9"
+    words:
+    - syllables:
+      - jo
+      - jo
+    - syllables:
+      - a
+    - syllables:
+      - ju
+      - "r\xE9"
+  - sentence: Il y a Juju
+    words:
+    - syllables:
+      - il
+    - syllables:
+      - y
+    - syllables:
+      - a
+    - syllables:
+      - ju
+      - ju
+  - sentence: Juju a lu
+    words:
+    - syllables:
+      - ju
+      - ju
+    - syllables:
+      - a
+    - syllables:
+      - lu
+  - sentence: Le jury a ri
+    words:
+    - syllables:
+      - le
+    - syllables:
+      - ju
+      - ry
+    - syllables:
+      - a
+    - syllables:
+      - ri
