@@ -9,6 +9,7 @@ using QuestPDF.Infrastructure;
 public class WriteSentenceExercise : MonoBehaviour
 {
     [SerializeField] private WriteSentencesManager writeSentenceExercise; 
+    [SerializeField] private Sprite syllable; 
 
     void Start()
     {
@@ -48,34 +49,30 @@ public class WriteSentenceExercise : MonoBehaviour
 
                     foreach (Sentence sentence in sentences)
                     {
-                        column.Item().Border(1).Column(block =>
+                        column.Item().Border(1).Height(250).Padding(10).AlignBottom().Column(block =>
                         {
-                            block.Item().Height(80);
-
-                            block.Item().BorderTop(1).Padding(5).Inlined(wordsWrap =>
+                            block.Item().Height(100).Border(1).Padding(5).AlignBottom().Row(row =>
                             {
-                                wordsWrap.Spacing(20);
-
                                 foreach (Word word in sentence.words)
-                                    wordsWrap.Item().Row(syllablesRow =>
+                                {
+                                    foreach (string syllabe in word.syllables)
                                     {
-                                        foreach (string syllable in word.syllables)
-                                            syllablesRow.AutoItem().AlignCenter().Text("⌣").FontColor(Colors.Blue.Medium).FontSize(24);
-                                    });
+                                        row.AutoItem().Width(50).Height(50).AlignLeft().AlignBottom().Image(Helpers.SpriteToPng(syllable)).FitArea();
+                                    }
+                                    row.ConstantItem(15);
+                                }
                             });
                         });
 
-                        column.Item().PaddingBottom(15);
+                        column.Item().PaddingBottom(10);
                     }
-
-                    column.Item().PaddingTop(10);
-
-                    column.Item().Inlined(bank =>
+                    
+                    column.Item().Extend().AlignBottom().Inlined(bank =>
                     {
-                        bank.Spacing(10);
+                        bank.Spacing(0);
 
                         foreach (string tile in syllableTiles)
-                            bank.Item().Border(1).Padding(10).AlignCenter().Text(tile);
+                            bank.Item().Border(1).Padding(10).AlignCenter().Text(tile).FontSize(20);
                     });
                 });
             });
