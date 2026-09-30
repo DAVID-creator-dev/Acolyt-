@@ -21,4 +21,4 @@ The general flow: pick words from a library (each tied to an image and its sylla
 
 | Step 1 | Step 2 | Final PDF result |
 | --- | --- | --- |
-| ![Step 1](docs/images/step1.png) | ![Step 2](docs/images/step2.png) | ![Final PDF result](docs/images/result.png) |
+| ![Step 1](docs/images/Step1.png) | ![Step 2](docs/images/Step2.png) | ![Final PDF result](docs/images/Result.png) |
